@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:background="@drawable/answer_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="2dp"
+            android:background="@drawable/number_background">
+
+            <TextView
+                android:id="@+id/t_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:textColor="@color/colorWhite"
+                android:text="1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/t_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:textColor="@color/colorTextColor"/>
+
+            <TextView
+                android:id="@+id/t_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utuk: 1998"
+                android:layout_below="@+id/t_username"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:textSize="18sp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:textColor="@color/colorPalet1"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

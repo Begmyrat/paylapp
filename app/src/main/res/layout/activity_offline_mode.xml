@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLight"
+    tools:context=".OfflineModeActivity">
+
+    <RelativeLayout
+        android:id="@+id/r_unclick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="false"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="0dp">
+
+            <RelativeLayout
+                android:id="@+id/r_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/i_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_time"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/t_countDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:layout_toRightOf="@+id/i_time"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/t_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:paddingVertical="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text=""/>
+
+                <ImageView
+                    android:id="@+id/i_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/t_score"
+                    android:src="@drawable/ic_favorites"
+                    android:layout_marginRight="4dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r_question"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/question_background"
+                android:padding="20dp"
+                android:layout_marginTop="-7dp"
+                android:layout_below="@+id/r_top">
+
+                <TextView
+                    android:id="@+id/t_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextColor"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_question"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/r_answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:elevation="2dp"
+                    android:onClick="clickA1"
+                    android:background="@drawable/answer_background">
+
+                    <TextView
+                        android:id="@+id/t_answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=""
+                        android:gravity="center"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:textColor="@color/colorTextColor"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r_answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:paddingVertical="10dp"
+                    android:elevation="2dp"
+                    android:onClick="clickA2"
+                    android:background="@drawable/answer_background">
+
+                    <TextView
+                        android:id="@+id/t_answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=""
+                        android:gravity="center"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:textColor="@color/colorTextColor"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r_answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:paddingVertical="10dp"
+                    android:elevation="2dp"
+                    android:onClick="clickA3"
+                    android:background="@drawable/answer_background">
+
+                    <TextView
+                        android:id="@+id/t_answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=""
+                        android:gravity="center"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:textColor="@color/colorTextColor"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r_answer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingVertical="10dp"
+                    android:elevation="10dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="clickA4"
+                    android:background="@drawable/answer_background">
+
+                    <TextView
+                        android:id="@+id/t_answer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=""
+                        android:gravity="center"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:textColor="@color/colorTextColor"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav_menu_background"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_nav_menu_2"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        app:itemIconTint="@color/bottom_nav_select"
+        app:itemTextColor="@color/bottom_nav_select"
+        app:labelVisibilityMode="labeled" />
+
+
+</RelativeLayout>

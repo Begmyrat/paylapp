@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhiteLight"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+<!--   e_username, e_phone, e_password, e_passwordConfirm -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp">
+
+            <ImageView
+                android:id="@+id/i_imageview"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_3193829"/>
+
+            <TextView
+                android:id="@+id/t_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agza bol"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:layout_below="@+id/i_imageview"
+                android:textSize="32sp"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginTop="-20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/t_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ulanyjy Ady"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:layout_below="@+id/t_login"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/e_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:paddingHorizontal="10dp"
+                android:hint="Ulanyjy adyñyzy ÿazyñ"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/t_username"
+                android:background="@drawable/input_background"/>
+
+            <TextView
+                android:id="@+id/t_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefon Nomer"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:layout_below="@+id/e_username"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/e_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:paddingHorizontal="10dp"
+                android:hint="Telefon nomeriñizi ÿazyñ"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/t_phone"
+                android:background="@drawable/input_background"/>
+
+            <TextView
+                android:id="@+id/t_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kod"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:layout_below="@+id/e_phone"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/e_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:paddingHorizontal="10dp"
+                android:hint="Koduñyzy ÿazyñ"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/t_password"
+                android:background="@drawable/input_background"/>
+
+            <TextView
+                android:id="@+id/t_passwordConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kod Tassyklamasy"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:layout_below="@+id/e_password"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/e_passwordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:paddingHorizontal="10dp"
+                android:hint="Koduñyzy tassyklañ"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/t_passwordConfirm"
+                android:background="@drawable/input_background"/>
+
+            <TextView
+                android:id="@+id/t_privatQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iñ gowy görÿän sanyñyz?"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:layout_below="@+id/e_passwordConfirm"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextColor"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/e_privateQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:paddingHorizontal="10dp"
+                android:hint="Koduñyzy unudanyñyzda bu syrly san bilen koduñyzy täzeläp bilersiñiz"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/t_privatQuestion"
+                android:background="@drawable/input_background"/>
+
+            <RelativeLayout
+                android:id="@+id/r_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/e_privateQuestion"
+                android:layout_marginTop="40dp"
+                android:onClick="clickRegister"
+                android:elevation="2dp"
+                android:background="@drawable/login_background"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agza bol"
+                    android:layout_centerInParent="true"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunitosans_extra_bold"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/r_register"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/t_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasabyñyz barmy?"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunitosans_extra_bold"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/t_1"
+                    android:onClick="clickLogin"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/t_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gir"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccentDark"
+                        android:fontFamily="@font/nunitosans_extra_bold"/>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentDark"
+                        android:layout_below="@+id/t_2"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

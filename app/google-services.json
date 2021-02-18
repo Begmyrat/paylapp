@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807747155254",
+    "project_id": "paylapp-b7924",
+    "storage_bucket": "paylapp-b7924.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807747155254:android:541d40ba13ffd1e586ef97",
+        "android_client_info": {
+          "package_name": "com.mobiloby.paylapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807747155254-8bctcabhsravb6n258pc15n2lagt6e9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrsojgbZKQpIGLO4GJVJxiQsGR0Y69p8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807747155254-8bctcabhsravb6n258pc15n2lagt6e9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

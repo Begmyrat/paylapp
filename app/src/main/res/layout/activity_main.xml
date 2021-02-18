@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:background="@color/colorWhiteLight"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav_menu_background"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_nav_menu"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        app:itemIconTint="@color/bottom_nav_select"
+        app:itemTextColor="@color/bottom_nav_select"
+        app:labelVisibilityMode="labeled" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNav"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:id="@+id/t_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paýlapp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:textStyle="bold"
+                android:textSize="32sp"/>
+
+            <TextView
+                android:id="@+id/t_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zehin bäsleşigi"
+                android:textSize="22sp"
+                android:layout_below="@+id/t_title"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="@color/colorTextColorLight"/>
+
+
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sizeMiddleText="18sp"
+                app:sizeBottomText="14sp"
+                app:sizeTopText="14sp"
+                android:layout_below="@+id/t_subtitle"
+                android:elevation="3dp"
+                app:selectorColor="@color/colorAccent"
+                app:textColorNormal="@color/colorPrimary"
+                app:textColorSelected="@color/colorAccent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@+id/calendarView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:scrollbarSize="0dp"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerview"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/online_background"
+                android:layout_marginBottom="10dp"
+                android:elevation="3dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/i_cup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kupa"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/i_cup"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paýlapp-da her hepdäniň dowamynda utuk sany boýunça ilkinji 100-lige girmegi başaranlara baýraklar beriljekdir."
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorTextColor"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="@font/nunitosans_extra_bold"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="02"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorTextColorLight"
+                                android:fontFamily="@font/nunitosans_bold"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="gün"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="@font/nunitosans_extra_bold"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="09"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorTextColorLight"
+                                android:fontFamily="@font/nunitosans_bold"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="sagat"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorAccent"
+                                android:fontFamily="@font/nunitosans_extra_bold"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="21"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorTextColorLight"
+                                android:fontFamily="@font/nunitosans_bold"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:text="minut"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

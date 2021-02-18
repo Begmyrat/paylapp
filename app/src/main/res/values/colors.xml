@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#355c7d</color>
+    <color name="colorPrimaryDark">#725a7a</color>
+    <color name="colorAccent">#ff7582</color>
+    <color name="colorAccentDark">#c56c86</color>
+    
+    <color name="colorWhiteLight">#fefeff</color>
+    <color name="colorTextColor">#CC000000</color>
+    <color name="colorTextColorLight">#993E3E3E</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ed332e</color>
+    <color name="colorPalet1">#e52165</color>
+    <color name="colorPalet2">#077b8a</color>
+    <color name="colorPalet3">#FF9800</color>
+    <color name="colorPalet4">#26495c</color>
+    <color name="colorPalet5">#8a307f</color>
+    <color name="colorForgotPassword">#feffff</color>
+
+    <color name="colorBackground">#fafafc</color>
+    <color name="colorPurple">#322751</color>
+    <color name="colorButtonBackBackground">#f4f5fa</color>
+    <color name="colorInfoBoxSoluk">#E8EBF8</color>
+    <color name="colorOrange">#fc7555</color>
+    <color name="colorInfoTextSoluk">#AFB5D1</color>
+
+</resources>

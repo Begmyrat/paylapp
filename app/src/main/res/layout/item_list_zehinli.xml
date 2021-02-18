@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/category_item_background">
+
+        <RelativeLayout
+            android:id="@+id/r_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/back_background">
+
+            <TextView
+                android:id="@+id/t_position"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/colorPalet5"
+                android:fontFamily="@font/nunitosans_bold"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="10"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/r_icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/t_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paylapp"
+                android:fontFamily="@font/nunitosans_bold"
+                android:textSize="14sp"
+                android:alpha="0.7"
+                android:textColor="@color/colorPurple"/>
+
+            <TextView
+                android:id="@+id/t_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BegmyratGM"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/t_title"
+                android:textColor="@color/colorPurple"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/t_username">
+
+                <TextView
+                    android:id="@+id/t_dolar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TMT 240"
+                    android:fontFamily="@font/nunitosans_extra_bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPurple"/>
+
+                <TextView
+                    android:id="@+id/t_gazandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" gazandy"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textSize="15sp"
+                    android:alpha="0.7"
+                    android:layout_toRightOf="@+id/t_dolar"
+                    android:textColor="@color/colorPurple"/>
+
+                <TextView
+                    android:id="@+id/t_utuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aşgabat"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textSize="15sp"
+                    android:alpha="0.7"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPurple"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

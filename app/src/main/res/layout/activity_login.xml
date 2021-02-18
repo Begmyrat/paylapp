@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteLight"
+    tools:context=".LoginActivity">
+
+<!--    e_username, e_password-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp">
+
+        <ImageView
+            android:id="@+id/i_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_3193829"/>
+
+        <TextView
+            android:id="@+id/t_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş"
+            android:fontFamily="@font/nunitosans_extra_bold"
+            android:layout_below="@+id/i_imageview"
+            android:textSize="32sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/t_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulanyjy Ady"
+            android:fontFamily="@font/nunitosans_extra_bold"
+            android:layout_below="@+id/t_login"
+            android:textSize="22sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/e_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Ulanyjy adyñyzy ÿazyñ"
+            android:fontFamily="@font/nunitosans_bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/t_username"
+            android:background="@drawable/input_background"/>
+
+        <TextView
+            android:id="@+id/t_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kod"
+            android:fontFamily="@font/nunitosans_extra_bold"
+            android:layout_below="@+id/e_username"
+            android:textSize="22sp"
+            android:textColor="@color/colorTextColor"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/e_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="1dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Koduñyzy ÿazyñ"
+            android:fontFamily="@font/nunitosans_bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/t_password"
+            android:background="@drawable/input_background"/>
+
+        <RelativeLayout
+            android:id="@+id/r_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e_password"
+            android:layout_marginTop="40dp"
+            android:onClick="clickLogin"
+            android:elevation="2dp"
+            android:background="@drawable/login_background"
+            android:paddingVertical="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gir"
+                android:layout_centerInParent="true"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunitosans_extra_bold"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/t_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_login"
+            android:text="Koduñy unutdyñ?"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:onClick="clickForgotPassword"
+            android:fontFamily="@font/nunitosans_extra_bold"
+            android:textColor="@color/colorAccentDark"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/colorAccentDark"
+            android:layout_below="@+id/t_forgotPassword"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/t_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasabyñyz ÿokmy?"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitosans_extra_bold"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t_1"
+                android:onClick="clickRegister"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/t_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agza bol"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccentDark"
+                    android:fontFamily="@font/nunitosans_extra_bold"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAccentDark"
+                    android:layout_below="@+id/t_2"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
